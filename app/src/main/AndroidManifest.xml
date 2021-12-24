@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.news" >
+    <!-- 读写文件权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/icon"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.News" >
+        <activity
+            android:name=".FunctionalPage.AnimationActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserSpace.ChangeInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSpace.MyCollectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSpace.MyDownloadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSpace.MyAppreciationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSpace.MyInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSpace.MyIssueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSpace.MyHistoryToNewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSpace.MyFansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSpace.MyInterestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FunctionalPage.Main_News_ContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FunctionalPage.CommentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FunctionalPage.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FunctionalPage.GetBackPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.ContainerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FunctionalPage.LoginActivity"
+            android:exported="false" >
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
