@@ -118,7 +118,7 @@ public class CommitPage extends Fragment implements View.OnClickListener {
                 OkHttpClient client = new OkHttpClient().newBuilder()
                         .build();
                 MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
-                RequestBody body = RequestBody.create(mediaType, "title=test&content=test&tag=2&img_ids=462");
+                RequestBody body = RequestBody.create(mediaType, "title="+title.getText() + "&content="+ content.getText()+"&tag=2&img_ids=" + img_id);
                 Request request = new Request.Builder()
                         .url("http://39.106.195.109/itnews/api/news/release")
                         .method("POST", body)
