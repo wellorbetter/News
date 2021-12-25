@@ -6,6 +6,20 @@
     <Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <Toolbar
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:layout_height="50dp"
+            android:layout_gravity="left">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/baxk_">
+            </Button>
+
+        </Toolbar>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -1,12 +1,16 @@
 package com.example.news.UserSpace;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.news.Adapter.MyCollectionAdapter;
+import com.example.news.FunctionalPage.Main_News_ContentActivity;
 import com.example.news.R;
 import com.example.news.bean.MyCollectionBean;
 import com.google.firebase.database.annotations.NotNull;
@@ -36,6 +40,7 @@ public class MyCollectActivity extends AppCompatActivity {
     private SmartRefreshLayout smartRefreshLayout;
     private MyCollectionAdapter myCollectionAdapter;
     private TextView collection_num;
+    private Button back;
     //我的收藏
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,12 +48,19 @@ public class MyCollectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_collect);
         collection_num = findViewById(R.id.collection_num);
         recyclerView = findViewById(R.id.recyclerView);
+        back = findViewById(R.id.back);
         smartRefreshLayout = findViewById(R.id.smart_refresh);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         smartRefreshLayout.setEnableLoadMore(true);
         preferences = getSharedPreferences("LoginData", MODE_PRIVATE);
         token = preferences.getString("token", "null");
         find_collection();
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         smartRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
             @Override
             public void onRefresh(@NonNull RefreshLayout refreshLayout) {
@@ -105,7 +117,17 @@ public class MyCollectActivity extends AppCompatActivity {
                                     Log.d("result",result);
                                     if(myCollectionBean.getData().getNews().size()==0)
                                         collection_num.setText("暂无收藏哦！");
-                                    myCollectionAdapter  = new MyCollectionAdapter(MyCollectActivity.this,myCollectionBean);
+                                    myCollectionAdapter  = new MyCollectionAdapter(MyCollectActivity.this,myCollectionBean,
+                                    new MyCollectionAdapter.OnItemClickListener() {
+                                        @Override
+                                        public void onClick(int pos) {
+                                            Intent intent = new Intent(MyCollectActivity.this, Main_News_ContentActivity.class);
+                                            Bundle bundle = new Bundle();
+                                            bundle.putInt("id", myCollectionBean.getData().getNews().get(pos).getId());
+                                            intent.putExtras(bundle);
+                                            startActivity(intent);
+                                        }
+                                    });
                                     recyclerView.setAdapter(myCollectionAdapter);
                                 }
                             });

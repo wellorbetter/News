@@ -85,22 +85,22 @@ public class NewsPageAdapter extends RecyclerView.Adapter<NewsPageAdapter.NewPag
                 mListener.onClick(position);
             }
         });
-        holder.btn_like.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                preferences = mContext.getSharedPreferences("LoginData", MODE_PRIVATE);
-                token = preferences.getString("token", "error");
-                islike(holder,position);
-            }
-        });
-        holder.btn_star.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                preferences = mContext.getSharedPreferences("LoginData", MODE_PRIVATE);
-                token = preferences.getString("token", "error");
-                star(holder,position);
-            }
-        });
+//        holder.btn_like.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                preferences = mContext.getSharedPreferences("LoginData", MODE_PRIVATE);
+//                token = preferences.getString("token", "error");
+//                islike(holder,position);
+//            }
+//        });
+//        holder.btn_star.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                preferences = mContext.getSharedPreferences("LoginData", MODE_PRIVATE);
+//                token = preferences.getString("token", "error");
+//                star(holder,position);
+//            }
+//        });
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,11 +111,11 @@ public class NewsPageAdapter extends RecyclerView.Adapter<NewsPageAdapter.NewPag
         {
             holder.content.setText(news_brief_bean.getData().getNews().get(count).getContent());
             holder.title.setText(news_brief_bean.getData().getNews().get(count).getTitle());
-            holder.time.setText(news_brief_bean.getData().getNews().get(count).getCreate_time());
-            holder.btn_browser.setText(String.valueOf(news_brief_bean.getData().getNews().get(count).getBrow_num()));
-            holder.btn_like.setText(String.valueOf(news_brief_bean.getData().getNews().get(count).getLike_num()));
-            holder.btn_star.setText(String.valueOf(news_brief_bean.getData().getNews().get(count).getStar_num()));
-            holder.bb_num.setText(String.valueOf(news_brief_bean.getData().getNews().get(count).getBb_num()));
+//            holder.time.setText(news_brief_bean.getData().getNews().get(count).getCreate_time());
+//            holder.btn_browser.setText(String.valueOf(news_brief_bean.getData().getNews().get(count).getBrow_num()));
+//            holder.btn_like.setText(String.valueOf(news_brief_bean.getData().getNews().get(count).getLike_num()));
+//            holder.btn_star.setText(String.valueOf(news_brief_bean.getData().getNews().get(count).getStar_num()));
+//            holder.bb_num.setText(String.valueOf(news_brief_bean.getData().getNews().get(count).getBb_num()));
             //这个bbnum貌似不是评论的个数？ = =
             if(news_brief_bean.getData().getNews().get(count)
                     .getNews_pics_set().size()!=0)
@@ -149,12 +149,12 @@ public class NewsPageAdapter extends RecyclerView.Adapter<NewsPageAdapter.NewPag
         public NewPageViewHolder(@NonNull View itemView) {
             super(itemView);
             news_detail = itemView.findViewById(R.id.news_detail);
-            time = itemView.findViewById(R.id.time);
-            btn_browser = itemView.findViewById(R.id.btn_browser);
+//            time = itemView.findViewById(R.id.time);
+//            btn_browser = itemView.findViewById(R.id.btn_browser);
             title = itemView.findViewById(R.id.title);
-            btn_like = itemView.findViewById(R.id.btn_like);
-            btn_star = itemView.findViewById(R.id.btn_star);
-            bb_num = itemView.findViewById(R.id.bb_num);
+//            btn_like = itemView.findViewById(R.id.btn_like);
+//            btn_star = itemView.findViewById(R.id.btn_star);
+//            bb_num = itemView.findViewById(R.id.bb_num);
             content = itemView.findViewById(R.id.content);
             imageView = itemView.findViewById(R.id.content_image);
         }

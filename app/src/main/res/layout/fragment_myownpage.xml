@@ -5,10 +5,9 @@
     android:orientation="vertical"
     android:layout_height="match_parent">
     <LinearLayout
-        android:layout_weight="0.7"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="150dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_weight="1"
@@ -67,219 +66,184 @@
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
-        android:layout_weight="0.2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
+            android:background="@drawable/card_shape"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="120dp">
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/card_shape_"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/my_download">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:src="@drawable/c_collection"/>-->
+<!--                <TextView-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="left|center"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="我的下载"/>-->
+<!--            </LinearLayout>-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:id="@+id/my_download"
-                android:layout_weight="1">
+                android:layout_height="50dp"
+                android:background="@drawable/card_shape_"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/my_history">
                 <ImageView
-                    android:src="@drawable/my_download"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:layout_margin="10dp"
-                    android:layout_height="match_parent" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_weight="2"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="我的下载"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:id="@+id/my_history"
-                android:layout_weight="1">
-                <ImageView
-                    android:src="@drawable/history_browser"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:layout_margin="10dp"
-
-                    android:layout_height="match_parent" />
+                    android:src="@drawable/history"/>
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_weight="2"
+                    android:gravity="center|left"
                     android:layout_height="match_parent"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:text="历史记录"/>
             </LinearLayout>
             <LinearLayout
+                android:layout_margin="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:id="@+id/my_collect"
-                android:layout_weight="1">
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_shape_"
+                android:id="@+id/my_collect">
                 <ImageView
-                    android:src="@drawable/collect"
-                    android:layout_width="match_parent"
-                    android:layout_weight="1"
-                    android:layout_margin="10dp"
-
-                    android:layout_height="match_parent" />
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/collec" />
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_weight="2"
                     android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:text="我的收藏"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="我的收藏"/>
+                    android:textStyle="bold" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:id="@+id/my_appreciation"
-                android:layout_weight="1">
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_shape_"
+                android:layout_margin="10dp"
+                android:id="@+id/my_appreciation">
                 <ImageView
-                    android:src="@drawable/appreciate"
-                    android:layout_width="match_parent"
-                    android:layout_margin="10dp"
-
-                    android:layout_weight="1"
-                    android:layout_height="match_parent" />
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/appreciation_"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_weight="2"
                     android:layout_height="match_parent"
+                    android:gravity="center|left"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:text="我的点赞"/>
             </LinearLayout>
-        </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/card_shape_"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:id="@+id/my_interest"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="horizontal">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:src="@drawable/like" />-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent">
-
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="0.2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:gravity="left|center"-->
+<!--                    android:text="我的关注"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </LinearLayout>-->
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
-                android:layout_height="120dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
+                android:background="@drawable/card_shape_"
+                android:layout_margin="10dp"
+                android:id="@+id/my_issue">
+                <ImageView
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:id="@+id/my_interest"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:src="@drawable/my_interest"
-                        android:layout_width="match_parent"
-                        android:layout_margin="10dp"
-
-                        android:layout_weight="1"
-                        android:layout_height="match_parent" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_weight="2"
-                        android:layout_height="match_parent"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="我的关注"/>
-                </LinearLayout>
-                <LinearLayout
+                    android:src="@drawable/issur"/>
+                <TextView
                     android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:id="@+id/my_issue"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:src="@drawable/my_issue"
-                        android:layout_width="match_parent"
-                        android:layout_margin="10dp"
-                        android:layout_weight="1"
-                        android:layout_height="match_parent" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_weight="2"
-                        android:layout_height="match_parent"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="我的发布"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:id="@+id/my_fans"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:src="@drawable/my_fans"
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
-                        android:layout_margin="10dp"
-                        android:layout_height="match_parent" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_weight="2"
-                        android:layout_height="match_parent"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="我的粉丝"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:id="@+id/my_info"
-                    android:layout_weight="1">
-                    <ImageView
-                        android:src="@drawable/my_info"
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
-                        android:layout_margin="10dp"
-                        android:layout_height="match_parent" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_weight="2"
-                        android:layout_height="match_parent"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:text="我的信息"/>
-                </LinearLayout>
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="我的发布"/>
             </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:background="@drawable/card_shape_"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:id="@+id/my_fans">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:src="@drawable/c_collection"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:gravity="left|center"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:text="我的粉丝"/>-->
+<!--            </LinearLayout>-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:layout_weight="1">
-                <!--圆形图片-->
-<!--                <com.google.android.material.imageview.ShapeableImageView-->
-<!--                    android:id="@+id/iv_head"-->
-<!--                    android:layout_width="200dp"-->
-<!--                    android:layout_height="200dp"-->
-<!--                    android:onClick="changeAvatar"-->
-<!--                    android:src="@mipmap/ic_launcher"-->
-<!--                    app:shapeAppearanceOverlay="@style/circleImageStyle" />-->
-                <Button
-                    android:layout_gravity="center"
-                    android:layout_width="wrap_content"
-                    android:id="@+id/sighout"
-                    android:layout_height="wrap_content"
-                    android:textStyle="italic"
-                    android:textSize="25sp"
-                    android:text="退出登录"
-                    android:background="#F17171"/>
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/card_shape_"
+                android:layout_margin="10dp"
+                android:id="@+id/my_info">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/info"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center|left"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="我的信息"/>
             </LinearLayout>
-    </LinearLayout>
-
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:id="@+id/sighout"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textSize="25sp"
+                android:text="退出登录"
+                android:background="#F17171"/>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

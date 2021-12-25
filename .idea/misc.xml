@@ -16,13 +16,13 @@
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_get_back_password.xml" value="0.264" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_main.xml" value="0.1296875" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_main_news_content.xml" value="0.176" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_main_news_content.xml" value="0.152" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_appreciation.xml" value="0.1203125" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_collect.xml" value="0.10520833333333333" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_collect.xml" value="0.11200000000000002" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_download.xml" value="0.1203125" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_fans.xml" value="0.11200000000000002" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_history.xml" value="0.1171875" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_info.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_info.xml" value="0.152" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_interest.xml" value="0.1" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_my_issue.xml" value="0.1203125" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/activity_register.xml" value="0.2" />
@@ -33,14 +33,15 @@
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/fragment_a.xml" value="0.1721014492753623" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/fragment_b.xml" value="0.1721014492753623" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/fragment_commitpage.xml" value="0.152" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/fragment_myownpage.xml" value="0.12" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/fragment_myownpage.xml" value="0.152" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/fragment_network_disconnected.xml" value="0.1" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/fragment_newspage.xml" value="0.1296875" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/history_to_news_items.xml" value="0.2" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/kayout_bottom.xml" value="0.1296875" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/my_collection_item.xml" value="0.176" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/my_appreciation_items.xml" value="0.176" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/my_collection_item.xml" value="0.2" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/my_issue_items.xml" value="0.2" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/recyclerview_newspage.xml" value="0.136" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/News/app/src/main/res/layout/recyclerview_newspage.xml" value="0.2" />
       </map>
     </option>
   </component>

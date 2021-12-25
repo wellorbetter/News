@@ -34,11 +34,8 @@ import com.bumptech.glide.Glide;
 import com.example.news.R;
 import com.example.news.UserSpace.MyAppreciationActivity;
 import com.example.news.UserSpace.MyCollectActivity;
-import com.example.news.UserSpace.MyDownloadActivity;
-import com.example.news.UserSpace.MyFansActivity;
 import com.example.news.UserSpace.MyHistoryToNewsActivity;
 import com.example.news.UserSpace.MyInfoActivity;
-import com.example.news.UserSpace.MyInterestActivity;
 import com.example.news.UserSpace.MyIssueActivity;
 import com.example.news.bean.CommentsBean;
 import com.example.news.bean.MyInfoBean;
@@ -112,10 +109,10 @@ public class MyOwnPage extends Fragment implements View.OnClickListener {
         imageview_myself = view.findViewById(R.id.imageview_myself);
         button_change = view.findViewById(R.id.btn_change);
         my_collect = view.findViewById(R.id.my_collect);
-        my_download = view.findViewById(R.id.my_download);
-        my_fans = view.findViewById(R.id.my_fans);
+//        my_download = view.findViewById(R.id.my_download);
+//        my_fans = view.findViewById(R.id.my_fans);
         my_info = view.findViewById(R.id.my_info);
-        my_interest = view.findViewById(R.id.my_interest);
+//        my_interest = view.findViewById(R.id.my_interest);
         my_issue = view.findViewById(R.id.my_issue);
         my_history = view.findViewById(R.id.my_history);
         button_name = view.findViewById(R.id.name_change);
@@ -130,10 +127,10 @@ public class MyOwnPage extends Fragment implements View.OnClickListener {
         my_appreciation.setOnClickListener(this);
         my_collect.setOnClickListener(this);
         button_change.setOnClickListener(this);
-        my_download.setOnClickListener(this);
-        my_fans.setOnClickListener(this);
+//        my_download.setOnClickListener(this);
+//        my_fans.setOnClickListener(this);
         my_info.setOnClickListener(this);
-        my_interest.setOnClickListener(this);
+//        my_interest.setOnClickListener(this);
         my_issue.setOnClickListener(this);
         my_history.setOnClickListener(this);
         sighout.setOnClickListener(this);
@@ -161,10 +158,10 @@ public class MyOwnPage extends Fragment implements View.OnClickListener {
                 Intent intent_info = new Intent(getActivity(), MyInfoActivity.class);
                 getActivity().startActivity(intent_info);
                 break;
-            case R.id.my_interest://我的关注
-                Intent intent_interest = new Intent(getActivity(), MyInterestActivity.class);
-                getActivity().startActivity(intent_interest);
-                break;
+//            case R.id.my_interest://我的关注
+//                Intent intent_interest = new Intent(getActivity(), MyInterestActivity.class);
+//                getActivity().startActivity(intent_interest);
+//                break;
             case R.id.my_issue://我的发布
                 Bundle bundle_issue = new Bundle();
                 bundle_issue.putString("token",token);
@@ -172,14 +169,14 @@ public class MyOwnPage extends Fragment implements View.OnClickListener {
                 intent_issue.putExtras(bundle_issue);
                 getActivity().startActivity(intent_issue);
                 break;
-            case R.id.my_download://我的下载
-                Intent intent_download = new Intent(getActivity(), MyDownloadActivity.class);
-                getActivity().startActivity(intent_download);
-                break;
-            case R.id.my_fans://我的粉丝
-                Intent intent_fans = new Intent(getActivity(), MyFansActivity.class);
-                getActivity().startActivity(intent_fans);
-                break;
+//            case R.id.my_download://我的下载
+//                Intent intent_download = new Intent(getActivity(), MyDownloadActivity.class);
+//                getActivity().startActivity(intent_download);
+//                break;
+//            case R.id.my_fans://我的粉丝
+//                Intent intent_fans = new Intent(getActivity(), MyFansActivity.class);
+//                getActivity().startActivity(intent_fans);
+//                break;
             case R.id.my_history://我的历史
                 Bundle bundle = new Bundle();
                 bundle.putString("token",token);
